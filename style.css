@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+}
+body {
+    background-color:hsl(185, 75%, 39%);
+} 
+html {
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+.containers {
+    overflow: hidden;
+    position: relative;
+}
+.card {
+    border-radius: 0.7rem;
+    width: 600px;
+    height: 500px;
+    z-index: 99;
+}
+.bg-top {
+    position: absolute;
+    background-image: url('./images/bg-pattern-top.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 920px; 
+    width: 920px;
+    top: -500px; 
+    left: -400px;
+    z-index: -2;
+}
+.bg-bottom {
+    position: absolute;
+    background-image: url('./images/bg-pattern-bottom.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 850px; /* Adjust the relative size using vw (viewport width) */
+    width: 850px;
+    bottom: -500px; 
+    right: -400px;
+    z-index: -2;
+}
+.background-img {
+    background-image: url('./images/bg-pattern-card.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 15rem;
+    position: relative;
+    border-radius: 0.7rem 0.7rem 0 0;
+}
+.card-body {
+    text-align: center;
+}
+img {
+    /* border-radius: 3rem; */
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+   transform: translate(-50%);
+}
+h3 {
+    color: hsl(229, 23%, 23%);
+    margin-top: 3rem;
+    font-weight: 700;
+}
+p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+span {
+    margin-left: 0.7rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+h2 {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+}
+.card-text p {
+    font-size: 25px;
+}
+.card-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.followers, .likes, .photos {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-bottom p {
+    letter-spacing: 0.1rem;
+}
+hr {
+    margin-top: -1rem;
+}
+
+@media screen and (max-width: 912px) {
+    .background-img {
+        background-image: url('./images/bg-pattern-card.svg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 15rem;
+        position: relative;
+        border-radius: 0.7rem 0.7rem 0 0;
+    }
+    img {
+        /* border-radius: 3rem; */
+        border-radius: 50%;
+        border: 5px solid white;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 31%;
+        left: 50%;
+       transform: translate(-50%);
+    }
+}
+@media screen and (max-width: 430px) {
+    .bg-top {
+        position: absolute;
+        background-image: url('./images/bg-pattern-top.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px; 
+        width: 400px;
+        top: -200px; 
+        left: -200px;
+        z-index: -2;
+    }
+    .bg-bottom {
+        position: absolute;
+        background-image: url('./images/bg-pattern-bottom.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 600px; /* Adjust the relative size using vw (viewport width) */
+        width: 400px;
+        bottom: -250px; /* Adjust the position using vw */
+        right: -250px;
+        z-index: -2;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    .card-bottom p {
+        font-size: 0.6rem;
+    }
+    .background-img {
+        background-image: url('./images/bg-pattern-card.svg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        height: 15rem;
+        position: relative;
+        border-radius: 0.7rem 0.7rem 0 0;
+    }
+    img {
+        /* border-radius: 3rem; */
+        border-radius: 50%;
+        border: 5px solid white;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+       transform: translate(-50%);
+    }
+}
